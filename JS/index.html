@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo</title>
+</head>
+<body>
+    <script>
+        const mysql = require('mysql');
+    const connection = mysql.createConnection({
+        host: 'localhost',
+        user: 'root',
+        password: '',
+        database:'pdemo'
+    });
+
+    connection.connect((error) => {
+        if(error){
+            console.log('Error connecting to the MySQL Database');
+            return;
+        }
+    console.log('Connection established sucessfully');
+    });
+        
+    </script>
+    <a>hii</a>
+</body>
+</html>
